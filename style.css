@@ -1,7 +1,7 @@
 /*Desktop*/
 @media only screen and (min-width: 769px) {
     
-    body {
+    .main {
         font-size: 160%;
      }
 
@@ -10,7 +10,7 @@
 /*tablet*/
 @media only screen and (min-width: 426px) and (max-width: 768px) {
     
-    body {
+    .main {
         font-size: 120%;
      }
 
@@ -19,7 +19,7 @@
 /*Mobile S/M/L*/
 @media only screen and (min-width: 200px) and (max-width: 425px) {
     
-    body {
+    .main {
         font-size: 70%;
      }
 
