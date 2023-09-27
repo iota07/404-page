@@ -1,0 +1,78 @@
+/*Desktop*/
+@media only screen and (min-width: 769px) {
+    
+    body {
+        font-size: 160%;
+     }
+
+}
+
+/*tablet*/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    
+    body {
+        font-size: 120%;
+     }
+
+}
+
+/*Mobile S/M/L*/
+@media only screen and (min-width: 200px) and (max-width: 425px) {
+    
+    body {
+        font-size: 70%;
+     }
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    min-height:  100vh;
+    background-image: linear-gradient(106deg, rgba(226,226,236,1) 0%, rgba(198,222,227,1) 0%, rgba(236,236,241,1) 100%);
+
+}
+
+.main{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    
+
+}
+
+.main h1 {    
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 10px;
+    color: rgb(110, 150, 102);
+    text-shadow: 3px 3px 8px;
+    font-size: 80px;
+}
+
+.main h2 {
+    text-shadow: 2px 2px 4px;
+}
+
+.main a{
+    text-decoration: none;
+    color:#3a93a6;
+    background: #db5f5f;
+    padding: 5px 15px;
+    display: inline-block;
+    border-radius: 22px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.main a:hover{
+    background:#d20a0a;
+}
+
+
+
+
+
