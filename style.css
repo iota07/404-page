@@ -8,29 +8,30 @@ body{
 
 }
 
-.main{
+.main {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     text-align: center;
     
 
 }
 
+
 .main h1 {    
-    margin: 0;
-    font-weight: 300;
-    letter-spacing: 10px;
-    color: rgb(110, 150, 102);
-    text-shadow: 5px 5px 5px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #db5f5f;
     
+    font-weight: 900;
+    color: rgb(219, 110, 37);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #c90d0d;
+        
 }
 
+
 .main h2 {
-    text-shadow: 2px 2px 4px;
+    text-shadow: 2px 2px 5px hsl(84, 8%, 24%);   
+    margin-top: -120px;
 }
 
 .main a{
@@ -55,11 +56,11 @@ body{
 @media only screen and (min-width: 769px) {
     
     .main {
-        font-size: 160%;
+        font-size: 140%;
      }
 
     h1 {
-        font-size: 160px;
+        font-size: 140px;
 
     } 
 
@@ -73,7 +74,7 @@ body{
      }
     
     h1 {
-        font-size: 120px
+        font-size: 100px
     }
 
 }
@@ -85,10 +86,61 @@ body{
         font-size: 70%;
      }
     h1 {
-        font-size: 60px
+        font-size: 70px
+        
     }
 
 
 }
 
+.text-effecslide {
+    overflow: hidden;
 
+}
+
+.text-effecslide p {
+    transform: scale(10);
+    animation: scaleDown 0.8s forwards cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes scaleDown {
+    to {
+        transform: scale(1);
+    }
+}
+
+.text-effecslide .text-wrapper {
+    overflow: hidden;
+
+}
+
+.text-effecslide span {
+    display: inline-block;
+}
+
+.text-effecslide .text-wrapper:first-child span {
+    transform: translateX(101%);
+    animation: slideIn 0.8s 0.8s forwards cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-effecslide .text-wrapper:last-child span {
+    transform: translateX(-101%);
+    animation: slideIn 0.8s 0.8s forwards cubic-bezier(0.16, 1, 0.3, 1);
+    
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0%);
+    }
+    
+}
+
+.effect {
+    margin: 40px;
+}
+
+span {
+    display: block;
+    font-size: calc(1.5rem + 05vw);
+}
